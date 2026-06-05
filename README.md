@@ -180,8 +180,14 @@ http://127.0.0.1:5000
 
 ## Capturas
 
+1.Inicio
 ![Mi imagen](Imagenes/Inicio.png)
+2.Apartado Registro
 ![Mi imagen](Imagenes/Registro.png)
+3.Apartado Listado
+![Mi imagen](Imagenes/Listado.png)
+4.Apartado Buscar Estudiante
+![Mi imagen](Imagenes/Buscar.png)
 
 ---
 
