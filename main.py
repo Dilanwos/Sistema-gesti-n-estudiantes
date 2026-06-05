@@ -15,7 +15,9 @@ while True:
     print("6. Cantidad de estudiantes")
     print("7. Buscar estudiante por nombre")
     print("8. Ordenar estudiantes")
-    print("9. Salir")
+    print("9. Estadísticas")
+    print("10. Información del sistema")
+    print("11. Salir")
 
     opcion = input("\nSeleccione una opción: ")
 
@@ -44,6 +46,12 @@ while True:
         sistema.ordenar_estudiantes()
 
     elif opcion == "9":
+        sistema.estadisticas()
+
+    elif opcion == "10":
+        sistema.informacion_sistema()
+
+    elif opcion == "11":
         print("\nPrograma finalizado.")
         break
 
