@@ -11,6 +11,3 @@ __pycache__/
 
 # Configuración de VS Code
 .vscode/
-
-# Base de datos SQLite (si la agregas después)
-*.db
