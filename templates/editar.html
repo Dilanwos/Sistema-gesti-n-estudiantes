@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Editar</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Editar Estudiante</h1>
+
+      <form method="POST">
+        <input
+          type="text"
+          name="nombre"
+          value="{{ estudiante.nombre }}"
+          required
+        />
+
+        <input
+          type="number"
+          name="edad"
+          value="{{ estudiante.edad }}"
+          required
+        />
+
+        <input
+          type="text"
+          name="curso"
+          value="{{ estudiante.curso }}"
+          required
+        />
+
+        <button type="submit">Guardar Cambios</button>
+        <a href="/" class="btn-menu"> 🏠 Volver al inicio </a>
+      </form>
+    </div>
+  </body>
+</html>

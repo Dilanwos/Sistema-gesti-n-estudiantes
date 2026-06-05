@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registrar</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registrar Estudiante</h1>
+
+      <form method="POST">
+        <label>Código</label>
+        <input type="text" name="codigo" required />
+
+        <label>Nombre</label>
+        <input type="text" name="nombre" required />
+
+        <label>Edad</label>
+        <input type="number" name="edad" required />
+
+        <label>Curso</label>
+        <input type="text" name="curso" required />
+
+        <button type="submit">Registrar</button>
+      </form>
+      <a href="/" class="btn-menu"> 🏠 Volver al inicio </a>
+    </div>
+  </body>
+</html>

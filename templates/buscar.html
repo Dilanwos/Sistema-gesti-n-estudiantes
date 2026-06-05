@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Buscar Estudiante</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Buscar Estudiante</h1>
+
+      <form method="POST">
+        <label>Código del estudiante</label>
+
+        <input
+          type="text"
+          name="codigo"
+          placeholder="Ingrese el código"
+          required
+        />
+
+        <button type="submit">Buscar</button>
+      </form>
+
+      {% if resultado %}
+
+      <div class="card" style="margin-top: 30px">
+        <h2>Estudiante encontrado</h2>
+
+        <br />
+
+        <p>
+          <strong>Código:</strong>
+          {{ resultado.codigo }}
+        </p>
+
+        <br />
+
+        <p>
+          <strong>Nombre:</strong>
+          {{ resultado.nombre }}
+        </p>
+
+        <br />
+
+        <p>
+          <strong>Edad:</strong>
+          {{ resultado.edad }}
+        </p>
+
+        <br />
+
+        <p>
+          <strong>Curso:</strong>
+          {{ resultado.curso }}
+        </p>
+      </div>
+
+      {% endif %}
+
+      <br />
+
+      <a href="/" class="btn-menu"> 🏠 Volver al inicio </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sistema Estudiantil</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sistema de Gestión Estudiantil</h1>
+
+      <div class="menu">
+        <div class="card">
+          <a href="/registrar"> Registrar Estudiante </a>
+        </div>
+
+        <div class="card">
+          <a href="/estudiantes"> Ver Estudiantes </a>
+        </div>
+
+        <div class="card">
+          <a href="/buscar"> Buscar Estudiante </a>
+        </div>
+      </div>
+      <a href="/" class="btn-menu"> 🏠 Volver al inicio </a>
+    </div>
+  </body>
+</html>

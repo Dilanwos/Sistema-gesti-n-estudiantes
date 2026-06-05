@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Estudiantes</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lista de Estudiantes</h1>
+
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Curso</th>
+          <th>Acciones</th>
+        </tr>
+
+        {% for estudiante in estudiantes %}
+
+        <tr>
+          <td>{{ estudiante.codigo }}</td>
+          <td>{{ estudiante.nombre }}</td>
+          <td>{{ estudiante.edad }}</td>
+          <td>{{ estudiante.curso }}</td>
+
+          <td>
+            <a class="btn editar" href="/editar/{{ estudiante.codigo }}">
+              Editar
+            </a>
+
+            <a class="btn eliminar" href="/eliminar/{{ estudiante.codigo }}">
+              Eliminar
+            </a>
+          </td>
+        </tr>
+
+        {% endfor %}
+        <a href="/" class="btn-menu"> 🏠 Volver al inicio </a>
+      </table>
+    </div>
+  </body>
+</html>
