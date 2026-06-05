@@ -233,7 +233,7 @@ class SistemaEstudiantes:
 
         print("\n=== INFORMACIÓN DEL SISTEMA ===")
         print("Proyecto: Sistema de Gestión Estudiantil")
-        print("Versión: 1.0")
+        print("Versión: 2.0")
         print("Autor: Dilan Chirva")
         print("Paradigma: Programación Orientada a Objetos")
 
