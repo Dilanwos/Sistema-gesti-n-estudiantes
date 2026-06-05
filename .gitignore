@@ -1,2 +1,16 @@
+# Entorno virtual
 .venv/
-__pycache__
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Archivos temporales
+*.log
+
+# Configuración de VS Code
+.vscode/
+
+# Base de datos SQLite (si la agregas después)
+*.db
