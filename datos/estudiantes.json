@@ -1,14 +1,8 @@
 [
     {
         "codigo": "001",
-        "nombre": "Dilan Chirva",
-        "edad": 17,
-        "curso": "1101"
-    },
-    {
-        "codigo": "002",
-        "nombre": "Leidy Cardenas",
-        "edad": 41,
+        "nombre": "Prueba1",
+        "edad": 18,
         "curso": "1101"
     }
 ]
