@@ -1,93 +1,72 @@
 # Sistema de Gestión Estudiantil
 
-Proyecto desarrollado en Python aplicando los principios de la Programación Orientada a Objetos (POO).
+Aplicación desarrollada en Python utilizando Programación Orientada a Objetos (POO) y Flask para la gestión de estudiantes mediante una interfaz web moderna.
 
 ## Descripción
 
-Este sistema permite administrar estudiantes mediante operaciones CRUD (Crear, Leer, Actualizar y Eliminar), implementando conceptos fundamentales de POO como clases, objetos y herencia.
+Este proyecto permite administrar estudiantes mediante operaciones CRUD (Crear, Leer, Actualizar y Eliminar), implementando conceptos fundamentales de Programación Orientada a Objetos como clases, objetos, encapsulación y herencia.
 
-La información se almacena de forma persistente utilizando archivos JSON, permitiendo conservar los datos incluso después de cerrar el programa.
-
----
-
-## Tecnologías utilizadas
-
-- Python 3
-- Programación Orientada a Objetos (POO)
-- JSON para persistencia de datos
-- Git y GitHub para control de versiones
+La aplicación cuenta con una interfaz web desarrollada con Flask y almacena la información de forma persistente utilizando archivos JSON.
 
 ---
 
-## Estructura del proyecto
-
-```text
-SistemaEstudiantes/
-│
-├── main.py
-│
-├── modelos/
-│   ├── persona.py
-│   └── estudiante.py
-│
-├── servicios/
-│   └── sistema.py
-│
-├── datos/
-│   └── estudiantes.json
-│
-├── .gitignore
-│
-└── README.md
-```
-
----
-
-## Funcionalidades
+## Características
 
 ### Gestión de estudiantes
 
 - Registrar estudiantes
 - Mostrar estudiantes
 - Buscar estudiantes por código
+- Buscar estudiantes por nombre
 - Editar estudiantes
 - Eliminar estudiantes
 
 ### Funciones adicionales
 
-- Contar estudiantes registrados
-- Buscar estudiantes por nombre
 - Ordenar estudiantes por:
   - Nombre
   - Edad
   - Código
 
-### Estadísticas
+- Cantidad total de estudiantes registrados
 
-- Cantidad total de estudiantes
-- Promedio de edad
-- Edad mayor
-- Edad menor
+- Estadísticas:
+  - Promedio de edad
+  - Edad mayor
+  - Edad menor
+  - Cantidad de estudiantes
 
-### Persistencia
+### Persistencia de datos
 
 - Guardado automático en JSON
-- Carga automática de estudiantes al iniciar el sistema
+- Carga automática al iniciar la aplicación
 
 ### Validaciones
 
-- Validación de edad
-- Validación de nombres vacíos
-- Validación de cursos vacíos
-- Validación de códigos duplicados
+- Evita códigos duplicados
+- Valida edades inválidas
+- Evita nombres vacíos
+- Evita cursos vacíos
 
 ---
 
-## Conceptos de POO aplicados
+## Tecnologías utilizadas
+
+- Python 3
+- Flask
+- HTML5
+- CSS3
+- JSON
+- Git
+- GitHub
+
+---
+
+## Conceptos de POO implementados
 
 ### Clase Persona
 
-Contiene los atributos comunes:
+Clase base que contiene:
 
 - Nombre
 - Edad
@@ -107,27 +86,101 @@ Persona
 Estudiante
 ```
 
+### Encapsulación
+
+Los atributos y comportamientos de cada entidad se encuentran organizados dentro de clases específicas.
+
 ---
 
-## Cómo ejecutar el proyecto
+## Estructura del proyecto
 
-1. Clonar el repositorio
-
-```bash
-git clone URL_DEL_REPOSITORIO
+```text
+SistemaEstudiantes/
+│
+├── app.py
+├── main.py
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── modelos/
+│   ├── persona.py
+│   └── estudiante.py
+│
+├── servicios/
+│   └── sistema.py
+│
+├── datos/
+│   └── estudiantes.json
+│
+├── templates/
+│   ├── index.html
+│   ├── registrar.html
+│   ├── estudiantes.html
+│   ├── buscar.html
+│   └── editar.html
+│
+└── static/
+    └── style.css
 ```
 
-2. Ingresar a la carpeta
+---
+
+## Instalación
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git
+```
+
+Ingresar al proyecto:
 
 ```bash
 cd SistemaEstudiantes
 ```
 
-3. Ejecutar el programa
+Crear entorno virtual:
 
 ```bash
-python main.py
+python -m venv venv
 ```
+
+Activar entorno virtual:
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Instalar dependencias:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Ejecución
+
+Ejecutar la aplicación:
+
+```bash
+python app.py
+```
+
+Abrir en el navegador:
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+## Capturas
+
+Puedes agregar aquí imágenes de la aplicación una vez desplegada.
 
 ---
 
@@ -139,4 +192,6 @@ Dilan Chirva
 
 ## Versión
 
-Versión 1.0
+Versión 2.0
+
+Aplicación migrada desde consola a interfaz web utilizando Flask.
