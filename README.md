@@ -180,7 +180,7 @@ http://127.0.0.1:5000
 
 ## Capturas
 
-Puedes agregar aquí imágenes de la aplicación una vez desplegada.
+![Mi imagen](images/Inicio.png)
 
 ---
 
