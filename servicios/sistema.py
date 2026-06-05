@@ -59,7 +59,7 @@ class SistemaEstudiantes:
         self.guardar_estudiantes()
 
         print("Estudiante registrado correctamente.")
-    
+
     def mostrar_estudiantes(self):
 
         if len(self.estudiantes) == 0:
