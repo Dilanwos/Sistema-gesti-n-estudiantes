@@ -234,7 +234,7 @@ class SistemaEstudiantes:
         print("\n=== INFORMACIÓN DEL SISTEMA ===")
         print("Proyecto: Sistema de Gestión Estudiantil")
         print("Versión: 2.0")
-        print("Autor: Dilan Chirva")
+        print("Autor: Dilanwos")
         print("Paradigma: Programación Orientada a Objetos")
 
     def guardar_estudiantes(self):
